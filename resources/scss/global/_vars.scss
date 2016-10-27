@@ -1,0 +1,246 @@
+
+/* ===================================================
+COLORS
+=================================================== */
+
+// color values
+
+$color-white: #FFFFFF;
+$color-grey-light: #F6F6F6;
+$color-grey: #EDEFEF;
+$color-grey-2: #E4E5E5;
+$color-grey-medium2: #DCDCDC;
+$color-grey-medium: #D3D3D2;
+$color-grey-darker: #6B6B6B;
+$color-grey-darker2: #5E5E5E;
+$color-grey-dark: #303030;
+$color-black-13: rgba(0,0,0,0.13);
+$color-black-20: rgba(0,0,0,0.2);
+$color-black: #000000;
+$color-green-light: #DAEADE;
+$color-green: #008A34;
+$color-green-darker: #00823e;
+$color-blue: #70CAF2;
+$color-red: #FB082C;
+
+// color names
+
+$color-brand: $color-green;
+$color-brand-text: $color-white;
+
+$color-error: $color-red;
+$color-confirm: $color-green;
+
+$color-label: $color-grey-dark;
+$color-input: $color-grey-dark;
+$color-input-disabled: $color-grey;
+$color-input-border: $color-grey-medium;
+$color-input-border-focus: $color-grey-darker;
+$color-placeholder: $color-grey-darker;
+
+$color-bg: $color-grey;
+$color-nav-bg: $color-grey-light;
+$color-card-bg: $color-white;
+$color-visual-bg: $color-green-light;
+$color-visual-unread-bg: $color-grey-medium2;
+$color-form-bg: $color-grey-light;
+
+$color-button-label: $color-white;
+$color-button-bg: $color-green;
+$color-button-inactive-bg: $color-grey-darker;
+$color-button-inactive-hover-bg: $color-grey-darker2;
+$color-button-overlay: $color-black-13;
+
+$color-body: $color-black;
+$color-text: $color-grey-darker;
+$color-text-link: $color-green;
+
+$color-headline: $color-grey-dark;
+$color-subheadline: $color-grey-darker;
+
+$color-shadow: $color-black-13;
+$color-nav-shadow: $color-black-20;
+
+$color-tooltip-bg: $color-green;
+$color-tooltip: $color-white;
+
+
+/* ===================================================
+TYPOGRAPHY
+=================================================== */
+
+// Base
+$font-size-base: 16px;
+
+$font-size-base-h1: 32px;
+$font-size-base-h2: 28px;
+$font-size-base-h3: 26px;
+$font-size-base-h4: 22px;
+$font-size-base-h5: 20px;
+$font-size-base-h6: 18px;
+$font-size-base-p: 18px;
+$font-size-base-small: 16px;
+$font-size-base-tiny: 14px;
+$font-size-base-title: 20px;
+$font-size-base-name: 24px;
+$line-height-base: 1.2;
+
+// Names
+$font-size-label: $font-size-base-small;
+$font-size-input: $font-size-base-small;
+$font-size-name: $font-size-base-name;
+
+
+/* ===================================================
+CONTAINER
+=================================================== */
+
+$container-padding: 30px;
+$container-margin: 40px;
+
+
+/* ===================================================
+VEAMS SETTINGS
+=================================================== */
+$min-width: false; // This variable will be used in veams-sass
+
+// Breakpoints
+$bp-desktop-l: 1281;
+$bp-tablet-l: 1025;
+$bp-tablet-p: 769;
+$bp-mobile-l: 569;
+$bp-mobile-p: 481;
+$bp-mobile-small-p: 320;
+
+
+/* ===================================================
+FOUNDATION SETTINGS
+=================================================== */
+// The settings can be found here:
+// /resources/scss/vendor/foundation/settings/_settings.scss
+
+// Just copy and paste the things you need
+
+// 1. Global
+// ---------
+
+$global-width: 74rem;
+$global-lineheight: $line-height-base;
+$foundation-palette: (
+    primary: $color-green,
+    secondary: $color-grey-darker,
+    success: $color-green,
+    warning: #ffae00,
+    alert: $color-error,
+);
+$light-gray: $color-grey-light;
+$medium-gray: $color-grey;
+$dark-gray: $color-grey-darker;
+$black: $color-black;
+$white: $color-white;
+$body-background: $color-bg;
+$body-font-color: $color-body;
+$body-font-family: Arial, 'Helvetica Neue', Helvetica, Roboto, sans-serif;
+$global-margin: 30px;
+$global-padding: 30px;
+$global-weight-normal: 200;
+$global-weight-bold: 700;
+$global-radius: 0;
+$global-flexbox: true;
+
+
+// 2. Breakpoints
+// --------------
+
+$breakpoints: (
+    small: 0,
+    smobile: $bp-mobile-small-p,
+    mobile: $bp-mobile-p,
+    medium: $bp-mobile-l,
+    large: $bp-tablet-p,
+    xlarge: $bp-tablet-l,
+    xxlarge: $bp-desktop-l,
+    max: $global-width
+);
+$breakpoint-classes: (small smobile mobile medium large xlarge xxlarge);
+
+// 3. The Grid
+// -----------
+
+$grid-column-gutter: $container-padding * 2;
+
+// 4. Base Typography
+// ------------------
+
+$header-font-family: $body-font-family;
+$header-font-weight: $global-weight-normal;
+$header-font-style: normal;
+$font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
+$header-sizes: (
+    small: (
+        'h1': $font-size-base-h2,
+        'h2': $font-size-base-h3,
+        'h3': $font-size-base-h4,
+        'h4': $font-size-base-h5,
+        'h5': $font-size-base-h6,
+        'h6': $font-size-base-h6
+    ),
+    medium: (
+        'h1': $font-size-base-h1,
+        'h2': $font-size-base-h2,
+        'h3': $font-size-base-h3,
+        'h4': $font-size-base-h4,
+        'h5': $font-size-base-h5,
+        'h6': $font-size-base-h6
+    ),
+);
+$header-margin-bottom: 1rem;
+$small-font-size: $font-size-base-small;
+$header-small-font-color: $color-text;
+$paragraph-lineheight: $line-height-base;
+
+// 5. Typography Helpers
+// ---------------------
+
+$lead-lineheight: $line-height-base;
+$subheader-lineheight: $line-height-base;
+$subheader-color: $color-subheadline;
+$subheader-font-weight: $global-weight-normal;
+
+// 11. Button
+// ----------
+
+$button-padding: 15px;
+$button-margin: 0;
+$button-background: map_get($foundation-palette, primary);
+$button-background-hover: scale-color($button-background, $lightness: -15%);
+$button-color: $color-button-label;
+$button-color-alt: $color-button-label;
+$button-radius: $global-radius;
+$button-sizes: (
+    tiny: 0.6rem,
+    small: 0.75rem,
+    default: 0.9rem,
+    large: 1.25rem
+);
+$button-opacity-disabled: 0.25;
+
+// 19. Forms
+// ---------
+
+$input-color: $color-input;
+$input-placeholder-color: $color-placeholder;
+$input-font-size: rem-calc($font-size-input);
+$input-border: 1px solid $color-input-border;
+$input-border-focus: 1px solid $color-input-border-focus;
+
+
+// 36. Top Bar
+// -----------
+
+$topbar-padding: 0;
+$topbar-background: $color-nav-bg;
+$topbar-submenu-background: $topbar-background;
+$topbar-title-spacing: 30px;
+$topbar-input-width: 200px;
+$topbar-unstack-breakpoint: medium;
