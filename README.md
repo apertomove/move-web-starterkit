@@ -1,6 +1,6 @@
 # Move-Web-Starterkit
 **Version 1.0**  
-by Janko Hofmann ([https://github.com/jankohofmann]())  
+by [Janko Hofmann](https://github.com/jankohofmann)  
 based on the great [Veams project](http://www.veams.org/).
 
 ## Requirements for Front-end Development
