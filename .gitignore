@@ -23,9 +23,10 @@ resources/sass/icons/_icons*
 *.css.map
 *.js.map
 
-### NPM stuff ###
+### NPM / yarn stuff ###
 npm-debug.log
 node_modules
+yarn.lock
 
 ### Caches ###
 .sass-cache
