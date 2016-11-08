@@ -9,7 +9,7 @@ based on the great [Veams project](http://www.veams.org/).
 
 ## Included Tools
 * **Task Runner:** [Grunt](http://gruntjs.com/)
-* **Static Site Generator:** [Assemble](assemble.io)
+* **Static Site Generator:** [Assemble](http://assemble.io)
 * **Frontend Framework:** None (build process is already setup to work with  [React](https://facebook.github.io/react/) though)
 * **ES6 / JSX Transpiler:** [Babel](http://babeljs.io/)
 * **Module Bundler:** [Browserify](http://browserify.org/)
@@ -23,7 +23,7 @@ based on the great [Veams project](http://www.veams.org/).
 	* [Mocha](https://mochajs.org/) (Test Runner)
 	* [Chai](http://chaijs.com/) (Assertion Library)
 	* [Enzyme](http://airbnb.io/enzyme/) (React Component testing, optional)
-* **Documentation:** [JSDoc](usejsdoc.org/)
+* **Documentation:** [JSDoc](http://usejsdoc.org/)
 
 ## Folder Structure
 
