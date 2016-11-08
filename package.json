@@ -50,6 +50,7 @@
     "grunt-postcss": "~0.8.0",
     "grunt-sass": "~1.2.1",
     "grunt-sass-globber": "^2.0.2",
+    "grunt-sass-lint": "^0.2.1",
     "grunt-simple-mocha": "^0.4.1",
     "grunt-svgmin": "^4.0.0",
     "grunt-sync": "~0.6.2",
