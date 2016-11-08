@@ -1,33 +1,33 @@
-/* ===================================================
-Main File For Imports
-=================================================== */
+// ===================================================
+// Main File For Imports
+// ===================================================
 
 // Global Variables and Settings
-@import "global/_vars";
+@import 'global/vars';
 
 // Frameworks
-@import "vendor/foundation-all";
-@import "vendor/foundation-icons";
+@import 'vendor/foundation-all';
+@import 'vendor/foundation-icons';
 
 // Icons
-@import "icons/**/*";
+@import 'icons/**/*';
 
 // Mixins
-@import "utils/mixins/**/*";
+@import 'utils/mixins/**/*';
 
 // Extends
-@import "utils/extends/**/*";
+@import 'utils/extends/**/*';
 
 // Globals
-@import "global/_base";
-@import "global/_fonts";
+@import 'global/base';
+@import 'global/fonts';
 
 // atomic design artifacts
-@import "1-atoms/**/*";
-@import "2-molecules/**/*";
-@import "3-organisms/**/*";
-@import "4-templates/**/*";
-@import "5-pages/**/*";
+@import '1-atoms/**/*';
+@import '2-molecules/**/*';
+@import '3-organisms/**/*';
+@import '4-templates/**/*';
+@import '5-pages/**/*';
 
 // Print
-@import "global/_print";
+@import 'global/print';

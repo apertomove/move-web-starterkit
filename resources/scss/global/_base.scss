@@ -1,25 +1,31 @@
-/* ===================================================
-BASE
-=================================================== */
+// ---------------------------------------------------
+// Global styles
+// ---------------------------------------------------
 
-/* ---------------------------------------------------
-Global styles
---------------------------------------------------- */
 html {
-	// font-size: 62.5%;
-	height: 100%;
+  // font-size: 62.5%;
+  height: 100%;
 }
+
 body {
-	font-size: $font-size-base;
+  font-size: $font-size-base;
 }
+
 em {
-	font-style: normal;
-	font-weight: 400;
+  font-style: normal;
+  font-weight: 400;
 }
-h1, h2, h3, h4, h5, h6 {
-    line-height: $line-height-base;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: $line-height-base;
 }
+
 p {
-    font-size: $font-size-base-p;
-    line-height: $line-height-base;
+  font-size: $font-size-base-p;
+  line-height: $line-height-base;
 }
