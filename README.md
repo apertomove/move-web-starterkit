@@ -1,5 +1,8 @@
 # Move-Web-Starterkit
-**Version 1.0**  
+A boilerplate for web projects at Aperto Move.  
+
+
+**Version 1.1**  
 by [Janko Hofmann](https://github.com/jankohofmann)  
 based on the great [Veams project](http://www.veams.org/).
 
