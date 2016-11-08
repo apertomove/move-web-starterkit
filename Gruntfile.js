@@ -26,7 +26,8 @@ module.exports = function(grunt) {
 	require('jit-grunt')(grunt, {
 		'replace': 'grunt-text-replace',
 		'express': 'grunt-express-server',
-		'simplemocha': 'grunt-simple-mocha'
+		'simplemocha': 'grunt-simple-mocha',
+		'sasslint': 'grunt-sass-lint'
 	});
 	// measures the time each task takes
 	require('time-grunt')(grunt);
@@ -43,6 +44,7 @@ module.exports = function(grunt) {
 
 	// SASS Task
 	grunt.registerTask('watchCSS', [
+		'sasslint',
 		'sassGlobber:dev',
 		'sass:dev'
 	]);
@@ -55,18 +57,11 @@ module.exports = function(grunt) {
 		'replace'
 	]);
 
-	// Sprites Task
-	// grunt.registerTask('icons', [
-	// 	'dr-svg-sprites',
-	// 	'replace:spriteUrl'
-	// ]);
-
 	// FE Templates Task
 	grunt.registerTask('jsTemplates', [
 		'handlebars',
 		'replace:jsTemplates'
 	]);
-
 
 	// Build HTML Task
 	grunt.registerTask('build-html', [
@@ -95,6 +90,7 @@ module.exports = function(grunt) {
 		'browserify:dist',
 		'uglify',
 		'concurrent:syncing',
+		'sasslint',
 		'sassGlobber:dist',
 		'sass:dev',
 		'combine_mq',

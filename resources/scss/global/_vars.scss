@@ -1,27 +1,26 @@
-
-/* ===================================================
-COLORS
-=================================================== */
+// ===================================================
+// COLORS
+// ===================================================
 
 // color values
 
-$color-white: #FFFFFF;
-$color-grey-light: #F6F6F6;
-$color-grey: #EDEFEF;
-$color-grey-2: #E4E5E5;
-$color-grey-medium2: #DCDCDC;
-$color-grey-medium: #D3D3D2;
-$color-grey-darker: #6B6B6B;
-$color-grey-darker2: #5E5E5E;
+$color-white: #fff;
+$color-grey-light: #f6f6f6;
+$color-grey: #edefef;
+$color-grey-2: #e4e5e5;
+$color-grey-medium2: #dcdcdc;
+$color-grey-medium: #d3d3d2;
+$color-grey-darker: #6b6b6b;
+$color-grey-darker2: #5e5e5e;
 $color-grey-dark: #303030;
-$color-black-13: rgba(0,0,0,0.13);
-$color-black-20: rgba(0,0,0,0.2);
-$color-black: #000000;
-$color-green-light: #DAEADE;
-$color-green: #008A34;
+$color-black-13: rgba(0, 0, 0, 0.13);
+$color-black-20: rgba(0, 0, 0, 0.2);
+$color-black: #000;
+$color-green-light: #daeade;
+$color-green: #008a34;
 $color-green-darker: #00823e;
-$color-blue: #70CAF2;
-$color-red: #FB082C;
+$color-blue: #70caf2;
+$color-red: #fb082c;
 
 // color names
 
@@ -65,9 +64,9 @@ $color-tooltip-bg: $color-green;
 $color-tooltip: $color-white;
 
 
-/* ===================================================
-TYPOGRAPHY
-=================================================== */
+// ===================================================
+// TYPOGRAPHY
+// ===================================================
 
 // Base
 $font-size-base: 16px;
@@ -91,17 +90,17 @@ $font-size-input: $font-size-base-small;
 $font-size-name: $font-size-base-name;
 
 
-/* ===================================================
-CONTAINER
-=================================================== */
+// ===================================================
+// CONTAINER
+// ===================================================
 
 $container-padding: 30px;
 $container-margin: 40px;
 
 
-/* ===================================================
-VEAMS SETTINGS
-=================================================== */
+// ===================================================
+// VEAMS SETTINGS
+// ===================================================
 $min-width: false; // This variable will be used in veams-sass
 
 // Breakpoints
@@ -113,9 +112,9 @@ $bp-mobile-p: 481;
 $bp-mobile-small-p: 320;
 
 
-/* ===================================================
-FOUNDATION SETTINGS
-=================================================== */
+// ===================================================
+// FOUNDATION SETTINGS
+// ===================================================
 // The settings can be found here:
 // /resources/scss/vendor/foundation/settings/_settings.scss
 
@@ -127,11 +126,11 @@ FOUNDATION SETTINGS
 $global-width: 74rem;
 $global-lineheight: $line-height-base;
 $foundation-palette: (
-    primary: $color-green,
-    secondary: $color-grey-darker,
-    success: $color-green,
-    warning: #ffae00,
-    alert: $color-error,
+  primary: $color-green,
+  secondary: $color-grey-darker,
+  success: $color-green,
+  warning: #ffae00,
+  alert: $color-error,
 );
 $light-gray: $color-grey-light;
 $medium-gray: $color-grey;
@@ -153,14 +152,14 @@ $global-flexbox: true;
 // --------------
 
 $breakpoints: (
-    small: 0,
-    smobile: $bp-mobile-small-p,
-    mobile: $bp-mobile-p,
-    medium: $bp-mobile-l,
-    large: $bp-tablet-p,
-    xlarge: $bp-tablet-l,
-    xxlarge: $bp-desktop-l,
-    max: $global-width
+  small: 0,
+  smobile: $bp-mobile-small-p,
+  mobile: $bp-mobile-p,
+  medium: $bp-mobile-l,
+  large: $bp-tablet-p,
+  xlarge: $bp-tablet-l,
+  xxlarge: $bp-desktop-l,
+  max: $global-width
 );
 $breakpoint-classes: (small smobile mobile medium large xlarge xxlarge);
 
@@ -177,22 +176,22 @@ $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-sizes: (
-    small: (
-        'h1': $font-size-base-h2,
-        'h2': $font-size-base-h3,
-        'h3': $font-size-base-h4,
-        'h4': $font-size-base-h5,
-        'h5': $font-size-base-h6,
-        'h6': $font-size-base-h6
-    ),
-    medium: (
-        'h1': $font-size-base-h1,
-        'h2': $font-size-base-h2,
-        'h3': $font-size-base-h3,
-        'h4': $font-size-base-h4,
-        'h5': $font-size-base-h5,
-        'h6': $font-size-base-h6
-    ),
+  small: (
+    'h1': $font-size-base-h2,
+    'h2': $font-size-base-h3,
+    'h3': $font-size-base-h4,
+    'h4': $font-size-base-h5,
+    'h5': $font-size-base-h6,
+    'h6': $font-size-base-h6
+  ),
+  medium: (
+    'h1': $font-size-base-h1,
+    'h2': $font-size-base-h2,
+    'h3': $font-size-base-h3,
+    'h4': $font-size-base-h4,
+    'h5': $font-size-base-h5,
+    'h6': $font-size-base-h6
+  ),
 );
 $header-margin-bottom: 1rem;
 $small-font-size: $font-size-base-small;
@@ -212,16 +211,16 @@ $subheader-font-weight: $global-weight-normal;
 
 $button-padding: 15px;
 $button-margin: 0;
-$button-background: map_get($foundation-palette, primary);
+$button-background: map-get($foundation-palette, primary);
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $color-button-label;
 $button-color-alt: $color-button-label;
 $button-radius: $global-radius;
 $button-sizes: (
-    tiny: 0.6rem,
-    small: 0.75rem,
-    default: 0.9rem,
-    large: 1.25rem
+  tiny: 0.6rem,
+  small: 0.75rem,
+  default: 0.9rem,
+  large: 1.25rem
 );
 $button-opacity-disabled: 0.25;
 
