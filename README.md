@@ -19,6 +19,7 @@ based on the great [Veams project](http://www.veams.org/).
 	* [Foundation 6 SCSS](http://foundation.zurb.com/)
 	* [atomic design](http://bradfrost.com/blog/post/atomic-web-design/) folder structure
 	* [BEM methodology](http://getbem.com/)
+	* [Sass Guidelines](https://sass-guidelin.es/) & [Sass Lint](https://github.com/sasstools/sass-lint)
 * **Tests:**
 	* [Mocha](https://mochajs.org/) (Test Runner)
 	* [Chai](http://chaijs.com/) (Assertion Library)
