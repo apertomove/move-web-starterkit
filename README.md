@@ -70,14 +70,14 @@ Install dependencies:
 
 If you use Redux, you can install it like this:
 
-* `npm install --save redux react-redux redux-thunk`
+* `npm install --save redux react-redux`
 
 ### Add libraries to module bundler:
 
 1. Open the file `helpers/_grunt/browserify.js`.
 2. Search for the variables `libs` and `testingLibs` at the top of the file
 3. Uncomment all react-related modules you want to use
-4. Now you can use them via require() in your JS modules, e.g. `const React = require('react');`
+4. Now you can import and use them in your JS modules, e.g. `import React from 'react';`
 
 **That's it. Everything else is already configured:**
 
