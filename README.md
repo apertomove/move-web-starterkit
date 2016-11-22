@@ -55,7 +55,6 @@ based on the great [Veams project](http://www.veams.org/).
 
 1. Check the build status: [![Build Status](https://travis-ci.org/apertomove/move-web-starterkit.svg?branch=master)](https://travis-ci.org/apertomove/move-web-starterkit)
 1. If you didn't before, install [Node.js](https://nodejs.org/)
-1. If you didn't before, install [Grunt](http://gulpjs.com/) `npm install --global grunt`
 1. Enter `git clone https://github.com/apertomove/move-web-starterkit.git yourProjectsName`
 1. Enter `cd yourProjectsName`
 1. Install dependencies: `npm install`
