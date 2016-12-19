@@ -6,7 +6,8 @@ module.exports = {
 			configure: "<%= paths.helpers %>/task-configs/jsdoc.conf.json"
 		},
 		src: [
-			'<%= paths.src %>/js/**/*.js'
+			'<%= paths.src %>/js/**/*.js',
+            '!<%= paths.src %>/js/**/*.spec.js'
 		]
 	}
 };

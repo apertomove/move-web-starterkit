@@ -2,8 +2,8 @@
 A boilerplate for web projects at Aperto Move.  
 
 
-**Version 1.1**  
-by [Janko Hofmann](https://github.com/jankohofmann)  
+**Version 1.2**  
+Contributors: [Janko Hofmann](https://github.com/jankohofmann), [Tamio Honma](https://github.com/IOIO72)  
 based on the great [Veams project](http://www.veams.org/).
 
 ## Requirements for Front-end Development
@@ -27,6 +27,7 @@ based on the great [Veams project](http://www.veams.org/).
 	* [Mocha](https://mochajs.org/) (Test Runner)
 	* [Chai](http://chaijs.com/) (Assertion Library)
 	* [Enzyme](http://airbnb.io/enzyme/) (React Component testing, optional)
+    * [JSDOM](https://github.com/tmpvar/jsdom) (DOM Testing)
 * **Documentation:** [JSDoc](http://usejsdoc.org/)
 
 ## Folder Structure
@@ -42,7 +43,7 @@ based on the great [Veams project](http://www.veams.org/).
 	* `js/`: contains your JavaScript code (can also contain JSX, it will be transformed). Code in this folder will be linted, converted to ES5, bundled and minified automatically for deployment. Documentation will be generated with JSDoc into the folder `jsdocs/` in your output directory.
 	* `scss/`: contains your SCSS code that will be bundled, minified and inline media queries will be resolved. Contains Foundation 6 SCSS Version.
 	* `templating/`: contains assemble.io templates (handlebars templates + YAML front matter) that will be converted to static HTML pages
-	* `tests/`: put your unit tests here and run them via `grunt test` command
+	* `tests/`: put your unit tests here or next to the code you intend to test, name them `[yourFeature].spec.js` and run them via `grunt test` command
 * `helpers/`: contains configuration for the build process (grunt tasks)
 * `server/`: local server
 * `styleguide/`: put your styleguide in here, it will be copied into the build output folder

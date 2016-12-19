@@ -22,11 +22,11 @@ resources/sass/grunticon/preview.html
 resources/sass/icons/_icons*
 *.css.map
 *.js.map
+styles.tmp.scss
 
 ### NPM / yarn stuff ###
 npm-debug.log
 node_modules
-yarn.lock
 
 ### Caches ###
 .sass-cache
