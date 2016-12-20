@@ -112,6 +112,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('dist', [
 		'env:dist',
 		'clean',
+        'icons',
 		'build',
 		'copy:dist'
 	]);
