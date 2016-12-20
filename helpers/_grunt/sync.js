@@ -27,9 +27,9 @@ module.exports = {
 		files: [
 			// includes files within path and its sub-directories
 			{
-				cwd: 'styleguide',
+                cwd: 'sketch',
 				src: ['**'],
-				dest: '<%= paths.dev %>/styleguide'
+				dest: '<%= paths.dev %>/sketch'
 			}
 		]
 	}

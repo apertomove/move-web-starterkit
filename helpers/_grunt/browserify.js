@@ -8,15 +8,20 @@ var libs = [
 ];
 
 var testingLibs = libs.concat([
+    'jsdom',
 	// 'react/addons',
 	// 'react/lib/ReactContext',
-	// 'react/lib/ExecutionEnvironment'
+	// 'react/lib/ExecutionEnvironment',
 ]);
 
 module.exports = {
 	options: {
 		transform: [
-			"eslintify",
+            [
+                "eslintify", {
+                    passthrough: 'warnings'
+                }
+            ],
 			[
 				"babelify", {
 					"presets": ["es2015", "react"]
@@ -47,7 +52,7 @@ module.exports = {
 		}
 	},
 	test: {
-		src: ['<%= paths.src %>/tests/**/*.js'],
+        src: ['<%= paths.src %>/tests/setup.js', '<%= paths.src %>/js/**/*.spec.js'],
 		dest: '<%= paths.dev %>/tests/allTests.js',
 		options: {
 			external: testingLibs,
