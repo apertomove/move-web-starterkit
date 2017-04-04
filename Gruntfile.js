@@ -51,7 +51,7 @@ module.exports = function(grunt) {
 
 	// Icons Task
 	grunt.registerTask('icons', [
-		'svgmin',
+		'newer:svgmin',
 		'grunticon',
 		'clean:grunticon',
 		'replace'
@@ -72,7 +72,8 @@ module.exports = function(grunt) {
 	 *	ADVANCED TASKS
 	 */
 	grunt.registerTask('server', [
-		'jsTemplates',
+        'icons',
+        'jsTemplates',
 		'browserify:vendor',
 		'browserify:dev',
 		'newer:assemble',
@@ -85,6 +86,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('build', [
 		'clean:dev',
+        'icons',
 		'jsTemplates',
 		'browserify:vendor',
 		'browserify:dist',
@@ -112,7 +114,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('dist', [
 		'env:dist',
 		'clean',
-        'icons',
 		'build',
 		'copy:dist'
 	]);
