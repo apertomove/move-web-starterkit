@@ -6,6 +6,7 @@ module.exports = {
 		'<%= paths.src %>/scss/**/*.scss',
 		'!<%= paths.src %>/scss/vendor/**/*.scss',
 		'!<%= paths.src %>/scss/utils/**/*.scss',
+        '!<%= paths.src %>/scss/icons/**/*.scss',
 		'!<%= paths.src %>/scss/global/_print.scss',
 		'!<%= paths.src %>/scss/styles.tmp.scss'
 	]

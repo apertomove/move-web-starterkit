@@ -30,6 +30,10 @@ module.exports = {
 			],
 		tasks: 'sync:assets'
 	},
+    icons: {
+        files: ['<%= paths.src %>/assets/img/svg/*.svg'],
+        tasks: ['newer:svgmin', 'grunticon', 'clean:grunticon', 'replace']
+    },
 	scss: {
 		files: '<%= paths.src %>/scss/**/*',
 		tasks: [
